@@ -16,9 +16,9 @@ echo go run . --align"\033[41m \033[0m"right something standard
 echo
 go run . --align right something standard
 
-echo go run . "hello" shadow
+echo go run . "Hello" shadow
 echo
-go run . "hello" shadow
+go run . "Hello" shadow
 
 echo go run . --align=right left standard
 echo
