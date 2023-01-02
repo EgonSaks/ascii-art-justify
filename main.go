@@ -57,7 +57,7 @@ func main() {
 	if strings.Contains(words[0], "\\n") {
 		words = strings.Split(words[0], "\\n")
 	}
-
+	alignment = strings.ToLower(alignment)
 	printOutput(words, ascii, terminalWidth, alignment)
 }
 
