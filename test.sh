@@ -12,6 +12,11 @@ echo
 go run . --align=left "€ä" standard;  
 echo
 
+echo go run . --align=foobar "foo bar zoo"
+echo
+go run . --align=foobar "foo bar zoo"
+echo
+
 echo go run . --align"\033[41m \033[0m"right something standard
 echo
 go run . --align right something standard

@@ -57,6 +57,12 @@ func main() {
 	if strings.Contains(words[0], "\\n") {
 		words = strings.Split(words[0], "\\n")
 	}
+
+	if alignment != "left" && alignment != "center" && alignment != "right" && alignment != "justify" {
+		fmt.Println("Error: alignment must be left, center, right, or justify.")
+		os.Exit(0)
+	}
+
 	alignment = strings.ToLower(alignment)
 	printOutput(words, ascii, terminalWidth, alignment)
 }
